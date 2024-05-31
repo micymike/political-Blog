@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background-color: #a99393;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: purple;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.welcome {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts {
+    margin-bottom: 20px;
+}
+
+.latest-posts .post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts .post h3 {
+    margin-top: 0;
+}
+
+.latest-posts .post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #a99393;
+    transition: color 0.3s ease;
+}
+
+.latest-posts .post a:hover {
+    color: purple;
+}
+
+aside {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #a99393;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: purple;
+}
+
+footer {
+    background: #a99393;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid black;
+    margin-top: 20px;
+}
+footer ul{
+    list-style-type: none;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header, main, footer {
+        padding: 10px;
+    }
+}
