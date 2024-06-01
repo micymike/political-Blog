@@ -2,10 +2,10 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4c9c9;
+    background-color: #f4f4f4; /* Updated to match the previous background color */
+    font-family: Arial, sans-serif;
 }
 
 form {
@@ -13,18 +13,37 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-p {
-    margin: 10px 0;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="file"] {
+    width: calc(100% - 30px); /* Adjusted for icon space */
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding-left: 30px; /* Space for icon */
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding-left: 0;
+}
+
+textarea {
+    resize: vertical;
 }
 
 button {
@@ -34,6 +53,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
@@ -42,4 +62,15 @@ button:hover {
 
 a {
     color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bx {
+    position: absolute;
+    margin: 8px 0 0 8px; /* Position icons inside input */
+    color: #ccc;
 }
